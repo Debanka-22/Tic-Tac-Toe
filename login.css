@@ -18,15 +18,6 @@ body::before{
 	background-position:center;
 	position:absolute;
 }
-/*----------NAVIGATION BAR----------*/
-	/*nav{
-		position:fixed;
-		padding:25px 60px;
-		z-index:1;
-	}
-	nav a img{
-		width:165px;
-	}*/
 /*----------SIGN UP FORM----------*/
 .form-wrapper{
 	position:absolute;
@@ -79,10 +70,6 @@ form .form-control{
 	font-size:0.75rem;
 	transform:translateY(-130%);
 }
-/*.form-control .invalid:is(:focus, :invalid)~label{
-	font-size: 0.75rem;
-	transform: translateY(-130%);
-}*/
 form button{
 	width:100%;
 	padding:16px 0;
