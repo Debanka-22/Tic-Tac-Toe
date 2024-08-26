@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
 	margin: 0;
 	padding: 0;
@@ -10,7 +12,7 @@
 h1 {
 	font-size: 50px;
 	line-height: 60px;
-	color: #222222;
+	color: #4b0482;
 }
 
 h2 {
@@ -43,7 +45,7 @@ p {
 	margin: 40px 0;
 }
 
-button.btn{
+button.btn {
 	font-size: 15px;
 	font-weight: 600;
 	padding: 13.5px 30px;
@@ -56,7 +58,7 @@ button.btn{
 	transition: 0.2s;
 }
 
-button.btn1{
+button.btn1 {
 	font-size: 12.5px;
 	font-weight: 600;
 	padding: 10px 20px;
@@ -74,7 +76,7 @@ body {
 
 /*-----Navigation Bar-----*/
 
-#header{
+#header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -85,23 +87,24 @@ body {
 	top: 0;
 }
 
-#header img{
+#header img {
 	width: 40px;
 }
 
-#navbar{
+#navbar {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
-#navbar li{
+#navbar li {
 	list-style: none;
 	padding: 0 25px;
 	position: relative;
 }
 
-#navbar li a{
+#navbar li a {
+	font-family: Poppins;
 	text-decoration: none;
 	font-size: 15px;
 	font-weight: 500;
@@ -110,14 +113,14 @@ body {
 }
 
 #navbar li a:hover,
-#navbar li a.active{
-	color: #009988;
+#navbar li a.active {
+	/* color: #009988; */
 }
 
-#navbar li a.active::after,
-#navbar li a:hover::after{
-	content:"";
-	width: 25%;
+/* #navbar li a.active::after, */
+#navbar li a:hover::after {
+	content: "";
+	width: 45%;
 	height: 2.5px;
 	background-color: #009988;
 	position: absolute;
@@ -125,11 +128,24 @@ body {
 	left: 25px;
 }
 
-#mobile{
+#mobile {
 	display: none;
 	align-items: center;
 }
 
-#close{
+#close {
 	display: none;
+}
+
+#header .title {
+	left: 100px;
+}
+
+.main {
+	height: 80vh;
+}
+
+.main img{
+	height: 85vh;
+	width: 100%;
 }
