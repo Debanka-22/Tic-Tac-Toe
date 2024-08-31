@@ -1,41 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Sign In Page</title>
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css">
-		<link rel="stylesheet" href="login.css">
-	</head>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/login.css">
+	<title>Login</title>
+</head>
 <body>
-	<!--NAVIGATION BAR-->
-	
-	<!--SIGN UP FORM-->
 	<div class="form-wrapper">
-		<h2>Sign In</h2>
-		<form action="shop.html">
-		<div class="form-control">
-			<input type="text" required>
-			<label>Email or phone number</label>
-		</div>
-		<div class="form-control">
-			<input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
-			<label>Password</label>
-		</div>
-		<button type="submit">Sign Up</button>
-		<div class="form-help"> 
-			<div class="remember-me">
-			<input type="checkbox" id="remember-me">
-			<label for="remember-me">Remember me</label>
+		<h2>Login</h2>
+		<form id="loginForm">
+			<div class="form-control">
+				<input type="text" id="username" required>
+				<label>Username</label>
 			</div>
-			<a href="#">Need help?</a>
-		</div>
+			<div class="form-control">
+				<input type="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+				<label>Password</label>
+			</div>
+			<button type="submit">Login</button>
+			<p>Don't have an account? <a href="registration.html">Register here</a></p>
 		</form>
-		<p>Not A Member? <a href="registration.html">Register</a> here</p>
-		<small>
-		This page is protected by Google reCAPTCHA to ensure you're not a bot. 
-		<a href="#">Learn more.</a>
-		</small>
 	</div>
+	<script src="js/login.js"></script>
 </body>
 </html>

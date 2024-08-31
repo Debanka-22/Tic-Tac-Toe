@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css">
+	<link rel="stylesheet" href="css/welcome.css">
+	<title>Welcome to Tic-Tac-Toe</title>
+</head>
+<body>
+	<header id="header">
+		<nav>
+			<a href="#"><img src="img/logo.png" class="logo" alt="Logo"></a>
+			<h1 class="title">Tic-Tac-Toe</h1>
+			<ul id="navbar">
+				<li><a class="active" href="index.html">Home</a></li>
+				<li><a href="login.html">Log In</a></li>
+				<li><a href="registration.html">Register</a></li>
+			</ul>
+			<div id="mobile">
+				<i id="bar" class="fa-solid fa-bars"></i>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<section class="banner">
+			<img src="img/banner/body.avif" alt="Banner">
+			<div class="game-option">
+				<h1>Welcome to Online Tic-Tac-Toe</h1>
+				<p>Get started by logging in or registering to create your profile and begin playing!</p>
+			</div>
+		</section>
+	</main>
+
+	<script>
+		// Toggle mobile navbar
+		const bar = document.getElementById('bar');
+		const navbar = document.getElementById('navbar');
+
+		bar.addEventListener('click', function() {
+			if (navbar.style.display === "block") {
+				navbar.style.display = "none";
+			} else {
+				navbar.style.display = "block";
+			}
+		});
+
+		// Close menu on outside click or on close button click
+		document.addEventListener('click', function(event) {
+			const isClickInside = navbar.contains(event.target) || bar.contains(event.target);
+
+			if (!isClickInside) {
+				navbar.style.display = "none";
+			}
+		});
+	</script>
+</body>
+</html>

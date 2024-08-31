@@ -1,36 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css">
-    <link rel="stylesheet" href="index.css">
-	<title>Index Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe Main Menu</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 </head>
 <body>
-	<section id="header">
-		<a href="#"><img src="img/logo.png" class="logo"></a>
-		<div class="title">
-			<h1>Tic-Tac-Toe</h1>
-		</div>
-		<div>
-			<ul id="navbar">
-				<li><a class="active" href="index.html">Home</a></li>
-				<li><a href="login.html">Log in</a></li>
-				<li><a href="registration.html">Register</a></li>
-				<a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
-			</ul>
-		</div>
-		<div id="mobile">
-			<i id="bar" class="fa-solid fa-outdent"></i>
-		</div>
-	</section>
-	<section class="main">
-		<img src="img/banner/body.avif" alt="">
-		<div class="game-option">
-			
-		</div>
-	</section>
+    <div class="container">
+        <h1>Welcome to Tic-Tac-Toe</h1>
+        <div class="menu">
+            <button onclick="location.href='pvp.html'">Player vs Player</button>
+            <button onclick="location.href='ai.html'">AI vs Player</button>
+        </div>
+        <div class="profile">
+            <a href="profile.html">My Profile</a>
+        </div>
+    </div>
 </body>
 </html>
