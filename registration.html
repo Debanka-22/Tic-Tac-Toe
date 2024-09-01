@@ -1,41 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Register Here</title>
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css">
-		<link rel="stylesheet" href="registration.css">
-	</head>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/registration.css">
+	<title>Register</title>
+</head>
 <body>
-	<!--NAVIGATION BAR-->
-	
-	<!--SIGN UP FORM-->
 	<div class="form-wrapper">
-		<h2>Register Now</h2>
-		<form action="shop.html">
+		<h2>Register</h2>
+		<form id="registrationForm">
             <div class="form-control">
-                <input type="text" required>
-                <label>Name</label>
+                <input type="text" id="username" required>
+                <label>Username</label>
             </div>
-		<div class="form-control">
-			<input type="text" required>
-			<label>Email or phone number</label>
-		</div>
-		<div class="form-control">
-			<input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
-			<label>Password</label>
-		</div>
-		<button type="submit">Register</button>
-		<div class="form-help"> 
-			<a href="#">Need help?</a>
-		</div>
+			<div class="form-control">
+				<input type="email" id="email" required>
+				<label>Email</label>
+			</div>
+			<div class="form-control">
+				<input type="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+				<label>Password</label>
+			</div>
+			<button type="submit">Register</button>
+			<p>Already have an Account? <a href="login.html">Login here</a></p>
 		</form>
-		<p>Already have Account!! <a href="login.html">Sign Up</a> here</p>
-		<small>
-		This page is protected by Google reCAPTCHA to ensure you're not a bot. 
-		<a href="#">Learn more.</a>
-		</small>
 	</div>
+	<script src="js/registration.js"></script>
 </body>
 </html>
